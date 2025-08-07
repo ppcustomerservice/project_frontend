@@ -1,0 +1,294 @@
+.luxury-property-details {
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Hero Video Banner */
+.hero-video-banner {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.video-overlay-content {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+  z-index: 1;
+  max-width: 80%;
+}
+
+.property-title {
+  color: #d4af37;
+  font-size: 5rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.configuration-tags {
+  margin-top: 2rem;
+}
+
+.luxury-tag {
+  background: #d4af37;
+  color: #0a0a0a;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0;
+}
+
+/* Luxury Storytelling */
+.luxury-storytelling {
+  padding: 5rem 15%;
+  text-align: center;
+  background: #0a0a0a;
+}
+
+.luxury-description {
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 5rem 10%;
+  background: #0a0a0a;
+  text-align: center;
+}
+
+.section-title {
+  color: #d4af37;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+}
+
+.gallery-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+}
+
+.gallery-tab {
+  color: #aaa;
+  margin: 0 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  background: transparent;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.gallery-tab.active {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+.gallery-tab.active:after {
+  content: '';
+  position: absolute;
+  bottom: -1.1rem;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #d4af37;
+}
+
+.luxury-carousel {
+  margin-bottom: 3rem;
+}
+
+.carousel-item {
+  height: 70vh;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #333;
+}
+
+.vr-button {
+  background: transparent;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  height: 50px;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.vr-button:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+/* Highlights Section */
+.highlights-section {
+  padding: 5rem 10%;
+  background: #0a0a0a;
+}
+
+.highlights-grid {
+  margin-top: 3rem;
+}
+
+.highlight-card {
+  background: #1a1a1a;
+  padding: 2rem 1.5rem;
+  border-top: 3px solid #d4af37;
+  height: 100%;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+}
+
+.highlight-icon {
+  color: #d4af37;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.highlight-text {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  display: block;
+}
+
+/* Location Section */
+.location-section {
+  padding: 5rem 10%;
+  background: #0a0a0a;
+  text-align: center;
+}
+
+.map-container {
+  height: 500px;
+  background: #1a1a1a;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+}
+
+.map-placeholder {
+  text-align: center;
+  color: #888;
+}
+
+/* Provenance Section */
+.provenance-section {
+  padding: 5rem 10%;
+  background: #0a0a0a;
+}
+
+.provenance-description {
+  color: #e0e0e0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.provenance-details {
+  margin-top: 2rem;
+}
+
+/* Legal Section */
+.legal-section {
+  padding: 5rem 10%;
+  background: #0a0a0a;
+  text-align: center;
+}
+
+.request-info-button {
+  background: #d4af37;
+  color: #0a0a0a;
+  border: none;
+  height: 60px;
+  font-size: 1.2rem;
+  padding: 0 3rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/* Modal Styles */
+.luxury-modal .ant-modal-content {
+  background: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.luxury-modal .ant-modal-header {
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+.luxury-modal .ant-modal-title {
+  color: #d4af37;
+  font-size: 1.5rem;
+}
+
+.submit-button {
+  background: #d4af37;
+  color: #0a0a0a;
+  border: none;
+  font-weight: bold;
+}
+
+/* Error Screens */
+.error-screen,
+.not-found-screen {
+  text-align: center;
+  padding: 100px;
+  background: #0a0a0a;
+  min-height: 100vh;
+  color: #d4af37;
+}
+
+.back-button {
+  background: #d4af37;
+  color: #0a0a0a;
+  border: none;
+  margin-top: 20px;
+  font-weight: bold;
+}
