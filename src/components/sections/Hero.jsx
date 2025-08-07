@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import heroVideo from '../../assets/videos/hero-video.mp4';
+  
 
 const HeroSection = styled.section`
   height: 100vh;
@@ -114,9 +114,10 @@ const SecondaryButton = styled(motion.button)`
 const Hero = () => {
   return (
     <HeroSection>
-      <VideoBackground autoPlay loop muted playsInline>
-        <source src={heroVideo} type="video/mp4" />
-      </VideoBackground>
+    <VideoBackground autoPlay loop muted playsInline>
+  <source src="https://holidayhomesdatabase.s3.amazonaws.com/hero-video.mp4" type="video/mp4" />
+</VideoBackground>
+
       <Overlay />
       <HeroContent>
         <Title
