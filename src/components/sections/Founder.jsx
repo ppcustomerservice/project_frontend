@@ -208,7 +208,8 @@ const Founder = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <img src="/images/photo1.jpeg" alt="Founder" />
+         <img src={`${process.env.PUBLIC_URL}/images/photo1.jpeg`} alt="Founder" />
+
           </FounderImage>
           <FounderContent>
             <h2>Meet the Founder</h2>
