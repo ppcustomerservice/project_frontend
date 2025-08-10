@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import founderImage from '../../assets/images/photo1.jpeg';
 
 const Section = styled.section`
   background-color: ${({ theme }) => theme.colors.onyx};
@@ -82,14 +81,15 @@ const Founder = () => {
     <Section id="founder">
       <div className="container">
         <FounderContainer>
-          <FounderImage
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <img src={founderImage} alt="Founder" />
-          </FounderImage>
+              <FounderImage
+  initial={{ opacity: 0, x: -50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+>
+<img src="/images/photo1.jpeg" alt="Founder" />
+
+</FounderImage>
           <FounderContent>
             <h2>Meet the Founder</h2>
             <FounderName>Abhishek Pandhare</FounderName>
