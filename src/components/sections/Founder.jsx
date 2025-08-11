@@ -113,12 +113,14 @@
 // };
 
 // export default Founder;
+
+
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 const Section = styled.section`
-  background-color: ${({ theme }) => theme.colors.onyx || '#121212'};
+  background-color: ${({ theme }) => theme.colors.onyx};
   padding: 5rem 0;
 `;
 
@@ -128,7 +130,7 @@ const FounderContainer = styled.div`
   gap: 3rem;
   align-items: center;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.md || '768px'}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     grid-template-columns: 1fr;
   }
 `;
@@ -136,15 +138,12 @@ const FounderContainer = styled.div`
 const FounderImage = styled(motion.div)`
   position: relative;
   height: 500px;
-  width: 100%;
-  max-width: 500px; /* ensure container width */
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 10px solid ${({ theme }) => theme.colors.charcoal || '#333'};
-    display: block; /* remove inline gap */
+    border: 10px solid ${({ theme }) => theme.colors.charcoal};
   }
 
   &::before {
@@ -154,10 +153,8 @@ const FounderImage = styled(motion.div)`
     left: -20px;
     width: 100%;
     height: 100%;
-    border: 2px solid ${({ theme }) => theme.colors.gold || '#d4af37'};
+    border: 2px solid ${({ theme }) => theme.colors.gold};
     z-index: -1;
-    pointer-events: none;
-    box-sizing: border-box;
   }
 `;
 
@@ -174,12 +171,12 @@ const FounderContent = styled.div`
 
 const FounderName = styled.h3`
   font-size: 1.5rem;
-  color: ${({ theme }) => theme.colors.gold || '#d4af37'};
+  color: ${({ theme }) => theme.colors.gold};
   margin-bottom: 0.5rem;
 `;
 
 const FounderTitle = styled.p`
-  color: ${({ theme }) => theme.colors.lightGray || '#aaa'};
+  color: ${({ theme }) => theme.colors.lightGray};
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.9rem;
@@ -189,7 +186,6 @@ const FounderTitle = styled.p`
 const FounderMessage = styled.p`
   margin-bottom: 2rem;
   line-height: 1.8;
-  color: ${({ theme }) => theme.colors.lightGray || '#ccc'};
 `;
 
 const Signature = styled.img`
@@ -208,8 +204,10 @@ const Founder = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-         <img src={`${process.env.PUBLIC_URL}/images/photo1.jpeg`} alt="Founder" />
-
+            <img
+              src="https://holidayhomesdatabase.s3.ap-south-1.amazonaws.com/photo1.jpeg"
+              alt="Founder"
+            />
           </FounderImage>
           <FounderContent>
             <h2>Meet the Founder</h2>
