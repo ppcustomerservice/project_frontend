@@ -12,6 +12,7 @@ import PropertyDetails from './pages/PropertyDetails';
 import AddPropertyForm from './pages/AddPropertyForm';
 import EditPropertyForm from './pages/EditPropertyForm';
 import PropertyList from './pages/PropertyList';
+import SitemapPage from './SitemapPage';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
   <Route path="/admin/addproperty" element={<AddPropertyForm />} />
   <Route path="/admin/properties/edit/:id" element={<EditPropertyForm />} />
   <Route path="/admin/propertylist" element={<PropertyList />} />
+  <Route path="/sitemap" element={<SitemapPage />} />
 
           </Routes>
         </Layout>
